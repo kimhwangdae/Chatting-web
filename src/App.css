@@ -1,10 +1,64 @@
 #main{
-  display:flex;
+  padding:10px;
+  display:grid;
+  grid-gap:10px;
+  grid-template-columns: 200px 1fr;
 }
 
 #rooms{
-  width:30;
+  padding: 10px;
+  border:1px solid;
+  border-radius: 10px;
+
 }
+#events{
+  margin-block-start: 0;
+  margin-block-end: 0.5em;
+}
+
+#messages{
+  display: grid;
+  grid-template-columns: 600px;
+  border:1px solid;
+  border-radius: 10px;
+  padding:12px;
+  grid-template-rows:50px 1fr 50px;
+}
+
+.message-text{
+  flex-grow:1;
+}
+
+.user-id{
+  width:100px;
+}
+#rooms h2{
+  margin:0;
+}
+
+#header h1{
+  margin:0;
+}
+
+#app{
+  padding:10px;
+  display:grid;
+  grid-gap:10px;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: max-content 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+#header{
+  grid-row:1;
+  grid-column: 1/-1;
+  background-color: midnightblue;
+  color:white;
+  padding:10px;
+}
+
+
 
 .selected-room{
   color:blue;
